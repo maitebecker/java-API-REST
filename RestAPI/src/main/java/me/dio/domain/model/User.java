@@ -13,23 +13,24 @@ import jakarta.persistence.OneToOne;
 
 @Entity(name = "tb_user")
 public class User {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	
-	private String name;
-	
-	@OneToOne(cascade = CascadeType.ALL) //quando deletar um usuário a conta será deletada também
-	private Account account;
-	
-	@OneToOne(cascade = CascadeType.ALL)
-	private Card card;
-	
-	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER) 
-	private List<Feature> features;
 
-	@OneToMany(cascade = CascadeType.ALL)
-	private List<News> news;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Account account;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Card card;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Feature> features;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<News> news;
 	
 	public Long getId() {
 		return id;
