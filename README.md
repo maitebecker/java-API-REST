@@ -9,7 +9,7 @@ Projeto realizado durante o bootcamp de Java da plataforma [DIO](https://web.dio
 - OpenAPI (Swagger): Documenteção de API fácil e eficaz;
 - Railway: Facilita o deploy e monitoramento de nossas soluções na nuvem, além de oferecer diversos bancos de dados como serviço;
 
-URL Projeto Railway: https://java-api-rest.up.railway.app/swagger-ui/index.htm
+URL Projeto Railway: [https://java-api-rest.up.railway.app/swagger-ui/index.htm](https://java-api-rest.up.railway.app/swagger-ui/index.html)
 
 ## Diagrama de classes ✅
 ``` mermaid
